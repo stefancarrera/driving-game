@@ -10,8 +10,9 @@ h1 {
 }
 
 .fa-space-shuttle {
-  font-size: 75px;
+  font-size: 70px;
   color: snow;
+  margin: 1rem 1rem;
 }
 
 .container {
@@ -26,4 +27,24 @@ h1 {
   min-width: 900px;
   min-height: 700px;
   border: solid 2px white;
+}
+
+.left {
+  transform: rotate(-180deg);
+  transform-origin: center;
+}
+
+.right {
+  transform: rotate(0deg);
+  transform-origin: center;
+}
+
+.up {
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.down {
+  transform: rotate(90deg);
+  transform-origin: center;
 }
