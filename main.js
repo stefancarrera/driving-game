@@ -1,4 +1,13 @@
 var $ship = document.querySelector('.fa-space-shuttle');
+var left = 0;
+var intervalId = setInterval(drive, 16);
+
+function drive() {
+  if ($ship.className === 'fas fa-space-shuttle right') {
+    left += 10;
+    $ship.style.left = left + 'px';
+  }
+}
 
 window.addEventListener('keydown', function (event) {
   if (event.key === 'ArrowRight') {
@@ -10,4 +19,14 @@ window.addEventListener('keydown', function (event) {
   } else if (event.key === 'ArrowDown') {
     $ship.className = 'fas fa-space-shuttle down';
   }
+
+  if (event.key === ' ') {
+    intervalId = setInterval(drive, 16);
+  }
 });
+
+function clear() {
+  clearInterval(intervalId);
+}
+
+clear();
