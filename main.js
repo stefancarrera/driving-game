@@ -1,12 +1,18 @@
 var $ship = document.querySelector('.fa-space-shuttle');
 var left = 0;
+var spaceTapped = 0;
 var intervalId = setInterval(drive, 16);
+clear(intervalId);
 
 function drive() {
   if ($ship.className === 'fas fa-space-shuttle right') {
     left += 10;
     $ship.style.left = left + 'px';
   }
+}
+
+function clear() {
+  clearInterval(intervalId);
 }
 
 window.addEventListener('keydown', function (event) {
@@ -21,12 +27,10 @@ window.addEventListener('keydown', function (event) {
   }
 
   if (event.key === ' ') {
+    spaceTapped++;
+  } if (spaceTapped % 2 === 1) {
     intervalId = setInterval(drive, 16);
+  } else {
+    clear(intervalId);
   }
 });
-
-function clear() {
-  clearInterval(intervalId);
-}
-
-clear();
