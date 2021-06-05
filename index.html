@@ -11,10 +11,30 @@
   <title>Space Flight</title>
 </head>
 <body>
+  <div class="overlay hidden">
+    <div class="shipSelect hidden">
+      <h1>Choose Your Vessel</h1>
+      <div class="row">
+        <img src="images/rocket1.png" id="rocket1">
+        <img src="images/rocket3.png" id="rocket3">
+      </div>
+    </div>
+    <div class="skySelect hidden">
+      <h1>Choose the Galaxy</h1>
+      <div class="row">
+        <div class="galaxy2"></div>
+        <div class="galaxy1"></div>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <h1>Space Flight</h1>
     <div class="gameWindow">
-      <i class="fas fa-space-shuttle right"></i>
+      <img src="images/rocket1.png" class="right" id="picked">
+    </div>
+    <div>
+      <button class="changeShip">Change Ship</button>
+      <button class="changeSky">Change Galaxy</button>
     </div>
   </div>
   <script src="main.js"></script>

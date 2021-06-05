@@ -16,6 +16,20 @@ h1 {
   margin: 1rem 1rem;
 }
 
+.fa-bug {
+  position: relative;
+  font-size: 70px;
+  color: snow;
+  margin: 1rem 1rem;
+}
+
+.fa-ambulance {
+  position: relative;
+  font-size: 70px;
+  color: snow;
+  margin: 1rem 1rem;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -48,4 +62,82 @@ h1 {
 .down {
   transform: rotate(90deg);
   transform-origin: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: white;
+  text-shadow: #fc0 1px 0 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+  background-color: #11214b;
+  margin-top: 0.5rem;
+  margin-right: 0.75rem;
+  border-radius: 5px;
+  border: #fc0 2px solid;
+  font-family: 'Teko', sans-serif;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.shipSelect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: rgb(6, 14, 24);
+  border: solid 1px rgb(255, 255, 255);
+  position: relative;
+  top: 25rem;
+}
+
+.skySelect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: rgb(6, 14, 24);
+  border: solid 1px rgb(255, 255, 255);
+  position: relative;
+  top: 25rem;
+}
+
+.galaxy1 {
+  min-width: 200px;
+  min-height: 200px;
+  background-image: url(images/space.jpg);
+}
+
+.galaxy2 {
+  min-width: 200px;
+  min-height: 200px;
+  background-image: url(images/space2.jpg);
+}
+
+img {
+  position: relative;
+  width: 75px;
 }
