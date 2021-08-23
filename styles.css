@@ -129,15 +129,19 @@ button {
   min-width: 200px;
   min-height: 200px;
   background-image: url(images/space.jpg);
+  margin-left: 1rem;
 }
 
 .galaxy2 {
   min-width: 200px;
   min-height: 200px;
   background-image: url(images/space2.jpg);
+  margin-right: 1rem;
 }
 
 img {
   position: relative;
   width: 75px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
